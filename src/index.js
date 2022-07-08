@@ -1,13 +1,19 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 import Error_404 from "./pages/404";
+import Home from "./pages/Home";
 
 // CSS PAGE
 import "./pages/assets/vendors/mdi/css/materialdesignicons.min.css";
 import "./pages/assets/vendors/css/vendor.bundle.base.css"
 import "./pages/assets/css/style.css"
 import "./pages/assets/images/favicon.png"
+import "./pages/assets/vendors/jvectormap/jquery-jvectormap.css"
+import "./pages/assets/vendors/flag-icon-css/css/flag-icon.min.css"
+import "./pages/assets/vendors/owl-carousel-2/owl.carousel.min.css"
+import "./pages/assets/vendors/owl-carousel-2/owl.theme.default.min.css"
 
 function WebQL() {
   return (
@@ -17,7 +23,8 @@ function WebQL() {
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} /> */}
-          <Route index element={<Login />} />
+          <Route index element={<Register />}/>
+          <Route path="login" element={<Login />}/>
           <Route path="*" element={<Error_404 />} />
       </Routes>
     </BrowserRouter>

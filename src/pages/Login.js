@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import ScriptTag from 'react-script-tag';
+import { Link } from "react-router-dom";
 
 export default function Login() {
     useEffect(() => {
@@ -39,7 +40,7 @@ export default function Login() {
                       <button className="btn btn-google col">
                         <i className="mdi mdi-google-plus"></i> Google plus </button>
                     </div>
-                    <p className="sign-up">Don't have an Account?<a href="#"> Sign Up</a></p>
+                    <p className="sign-up">Don't have an Account?<Link to="/">Sign up</Link></p>
                   </form>
                 </div>
               </div>
