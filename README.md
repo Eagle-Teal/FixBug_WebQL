@@ -18,5 +18,5 @@ You may also see any lint errors in the console.
 Transfer code HTML to React
 <h2> Example:
 ### `<pre>
-\< input \> -> \< input \\ \>
+<input> -> <input \>
 </pre>`
