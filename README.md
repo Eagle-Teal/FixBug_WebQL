@@ -16,4 +16,5 @@ You may also see any lint errors in the console.
 
 ### `[Fix code 'src/pages/index.html']`
 Transfer code HTML to React
-<h2> Example: Tag ### `<input> -> <input />`
+<h2> Example:
+### `<pre><input> -> <input /></pre>`
