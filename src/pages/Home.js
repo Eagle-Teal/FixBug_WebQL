@@ -29,24 +29,10 @@ export default function Home() {
     useEffect(() => {
         document.title = 'Home';
                 
-        <Helmet>
-        <script defer src="/vendors/js/vendor.bundle.base.js"></script>
-        <script defer src="/vendors/chart.js/Chart.min.js"></script>
-        <script defer src="/vendors/progressbar.js/progressbar.min.js"></script>
-        <script defer src="/vendors/jvectormap/jquery-jvectormap.min.js"></script>
-        <script defer src="/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-        <script defer src="/vendors/owl-carousel-2/owl.carousel.min.js"></script>
-        <script defer src="/js/jquery.cookie.js" type="text/javascript"></script>
-        <script defer src="/js/off-canvas.js"></script>
-        <script defer src="/js/hoverable-collapse.js"></script>
-        <script defer src="/js/misc.js"></script>
-        <script defer src="/js/settings.js"></script>
-        <script defer src="/js/todolist.js"></script>
-        <script defer src="/js/dashboard.js"></script>
-        </Helmet>
     });
 
     return (
+      <>
         <div className="container-scroller">
           {/* partial:partials/_sidebar.html */}
           <nav className="sidebar sidebar-offcanvas" id="sidebar">
@@ -1064,5 +1050,21 @@ export default function Home() {
           </div>
           {/* page-body-wrapper ends */}
         </div>
+        <Helmet>
+        <script defer async src="/vendors/js/vendor.bundle.base.js"></script>
+        <script defer async src="/vendors/chart.js/Chart.min.js"></script>
+        <script defer async src="/vendors/progressbar.js/progressbar.min.js"></script>
+        <script defer async src="/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+        <script defer async src="/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script defer async src="/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+        <script defer async src="/js/jquery.cookie.js" type="text/javascript"></script>
+        <script defer async src="/js/off-canvas.js"></script>
+        <script defer async src="/js/hoverable-collapse.js"></script>
+        <script defer async src="/js/misc.js"></script>
+        <script defer async src="/js/settings.js"></script>
+        <script defer async src="/js/todolist.js"></script>
+        <script defer async src="/js/dashboard.js"></script>
+        </Helmet>
+      </>
     );
 }
