@@ -20,9 +20,9 @@ function WebQL() {
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} /> */}
           <Route index element={<Home />}/>
-          {/* <Route path="register" element={<Register />}/>
+          <Route path="register" element={<Register />}/>
           <Route path="login" element={<Login />}/>
-          <Route path="*" element={<Error_404 />} /> */}
+          <Route path="*" element={<Error_404 />} />
       </Routes>
     </BrowserRouter>
   )

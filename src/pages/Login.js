@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Login() {
     useEffect(() => {
         document.title = 'Login';
-    });
+    }, []);
 
     return (
     <div className="container-scroller">
@@ -40,7 +40,7 @@ export default function Login() {
                       <button className="btn btn-google col">
                         <i className="mdi mdi-google-plus"></i> Google plus </button>
                     </div>
-                    <p className="sign-up">Don't have an Account?<Link to="/">Sign up</Link></p>
+                    <p className="sign-up">Don't have an Account?<Link to="/register">Sign up</Link></p>
                   </form>
                 </div>
               </div>
